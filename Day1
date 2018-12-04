@@ -1,0 +1,22 @@
+# Input provided
+test = [$input]
+
+
+
+
+# First Challenge 
+res = sum(test)
+print(res)
+
+# Second Challenge
+second_set = {0,}
+second_sum = 0
+b = True
+while b is True:
+    for a in test:
+        second_sum += a
+        if second_sum in second_set:
+            print(second_sum)
+            b = False
+        else:
+            second_set.add(second_sum)
